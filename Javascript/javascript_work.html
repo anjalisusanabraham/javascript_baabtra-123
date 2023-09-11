@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="area()">AREA</button>
+    <button onclick="len()">LENGTH</button>
+    <button onclick="arrRev()">ARRAY REVERSE</button>
+    <button onclick="Fact()">factorial</button>
+    <button onclick="pNum()">PRIME NO</button>
+    <button onclick="Exp()">POWER NO</button>
+    <button onclick="nsrtring()">STRING</button>
+    <button onclick="Fibonacci()">Fibonacci</button>
+    <script>
+        // araea of trinagle
+
+        function area() {
+            var length = prompt('enter length')
+            var width = prompt('enter width')
+            var area = length * width
+            console.log(area)
+        }
+
+
+        // length of the given string
+
+        function len() {
+            var str = prompt("enter a string")
+            length = str.length
+            console.log(length)
+        }
+
+        // revers of an array
+
+        function arrRev() {
+            var arr = [1, 2, 3, 4, 5, 6]
+            var revarr = []
+            j = 0
+            for (i = arr.length - 1; i >= 0; i--) {
+                revarr[j] = arr[i]
+                j++
+            }
+            console.log(revarr)
+        }
+
+//  factorial of number
+        function fact() {
+            var i, num, f;
+            f = 1;
+            num = document.getElementById("num").value;
+            for (i = 1; i <= num; i++) {
+                ff = f * i;
+            }
+            ii = i - 1;
+            document.getElementById("res").innerHTML = "The factorial of the number " + i + " is: " + f;
+        }
+
+        //   prime number
+
+        function pNum() {
+            var num = Number(prompt('enter a number'))
+            primes = []
+            for (i = 2; i < num; i++) {
+                isPrime = true
+                for (j = 2; j < i; j++) {
+
+                    if (i % j === 0) {
+                        isPrime = false
+                        break
+                    }
+                }
+                if (isPrime === true) {
+                    primes.push(i)
+                }
+            }
+            console.log(primes)
+        }
+
+        // power of the number
+        function Exp() {
+            var num = Number(prompt('enter a number'))
+            var pow = Number(prompt('enter exp'))
+            exp = num ** pow
+            console.log(exp)
+        }
+
+        // calculates the sum of digits in a number.
+
+        function nsrtring() {
+            var word = prompt('enter a word')
+            var letter = prompt('enter a string')
+            var count = 0
+            for (i = 0; i < word.length; i++) {
+                if (word[i] == letter) {
+                    count++
+                }
+                console.log(count)
+            }
+        }
+        // Fibonacci series         
+
+        function Fibonacci() {
+            var limit = Number(prompt('enter the limit'))
+            var fibo = []
+            if (limit >= 1) {
+                fibo.push(0)
+            }
+            if (limit >= 2) {
+                fibo.push(1)
+            }
+
+            for (i = 2; i < limit; i++) {
+                var next = fibo[i - 1] + fibo[i - 2]
+                if (next >= limit) {
+                    break
+                }
+                fibo.push(next)
+
+            }
+            console.log(fibo)
+        }
+
+
+
+    </script>
+</body>
+
+</html>

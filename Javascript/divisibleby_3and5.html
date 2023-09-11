@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisible by 3 and 7</title>
+</head>
+<body>
+    <button type="button" onclick="Divisible()">click</button>
+    <script>
+        function Divisible(){
+            var number = Number(prompt('Enter the number'))
+            if(number % 3 == 0  && number % 5 ==0){
+                alert('Divisible by 3 and 5')
+            }
+            else{
+                alert('Not divisible by 3 and 5')
+            }
+        }
+    </script>
+</body>
+</html>

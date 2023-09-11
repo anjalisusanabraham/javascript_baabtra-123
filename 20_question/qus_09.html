@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 9</title>
+</head>
+<body>
+    <script>
+        
+const inputField = document.createElement("input");
+inputField.type = "text";
+
+
+const submitButton = document.createElement("button");
+submitButton.textContent = "Submit";
+
+
+submitButton.addEventListener("click", function () {
+    const inputValue = inputField.value;
+    alert("You entered: " + inputValue);
+});
+
+
+document.body.appendChild(inputField);
+document.body.appendChild(submitButton);
+
+    </script>
+</body>
+</html>

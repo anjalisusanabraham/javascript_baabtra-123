@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header '
+                'menu main main  right right'
+                'menu footer footer footer footer ';
+            gap: 2px ;
+            background-color: #f6ba14;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="grid-container">
+        <div class="item1">
+            <h1>WELCOME TO BAABTRA</h1>
+        </div>
+        <div class="item2">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            
+         <h4>About</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quam esse, exercitationem autem magnam quos quo aliquam a animi quibusdam.</p>
+        </div>
+        <div class="item3">
+            <h2>Section1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iure, esse modi molestiae consequatur
+                necessitatibus eveniet veritatis adipisci aliquam explicabo, exercitationem deleniti, ducimus libero
+                doloribus rem. Illum eum provident, vitae asperiores aliquid repellat, perferendis exercitationem
+                placeat quo est, consequuntur vero?</p>
+        </div>
+        <div class="item4">
+            <h2>section2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio autem facere ex id fugit dolores
+                rerum omnis sed qui sunt perspiciatis, culpa deleniti eaque fugiat exercitationem maxime quos?
+                Recusandae non at aliquid, ex consequatur quis inventore repellat laborum debitis!</p>
+        </div>
+        <div class="item5"><p>baabtra@gmail.com<br />9876876878<br />calicut</p></div>
+    </div>
+
+</body>
+
+</html>

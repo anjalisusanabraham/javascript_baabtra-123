@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 8</title>
+</head>
+<body>
+    <script>
+       
+const select = document.createElement("select");
+
+
+const colorOptions = ["Red", "Green", "Blue"];
+
+
+colorOptions.forEach((color) => {
+    const option = document.createElement("option");
+    option.value = color.toLowerCase(); 
+    option.textContent = color;
+    select.appendChild(option);
+});
+
+
+select.addEventListener("change", function () {
+    const selectedColor = select.value;
+    document.body.style.backgroundColor = selectedColor;
+});
+
+
+document.body.appendChild(select);
+
+    </script>
+</body>
+</html>

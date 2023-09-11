@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 5</title>
+</head>
+<body>
+    <script>
+       
+const ulElement = document.createElement("ul");
+
+
+const listItems = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
+
+
+for (const itemText of listItems) {
+    const liElement = document.createElement("li");
+    liElement.textContent = itemText;
+    
+    
+    ulElement.appendChild(liElement);
+}
+
+
+document.body.appendChild(ulElement);
+
+    </script>
+</body>
+</html>

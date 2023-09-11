@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- external css link -->
+    <link rel="stylesheet" href="sample.css">
+    <style>
+        /* internal css style*/
+        /* element selector */
+        h2 {
+            color: blueviolet;
+            text-align: center;
+        }
+        /* id selector */
+        #para {
+            color: chocolate;
+            margin: auto;
+            text-align: center;
+        }
+        /* class selector */
+        .p {
+            text-align: right;
+            color: aqua;
+        }
+        /* universal selector */
+        * {
+            padding:  5px;
+        }
+        /* child selector */
+        div p {
+            border: 5px solid red;
+
+        }
+        p ::before {
+            content: "Before Content";
+            font-weight: bold;
+        }
+        a {
+            color: darkmagenta;
+            /* remove the under line in a link  */
+            text-decoration: none;       
+          }
+          a:hover {
+            color: green;
+          }
+          a:visited  {
+            color: red;
+          }
+          ul li:first-child {
+            font-weight: bold;
+          }
+          ul li ::first-letter{
+            font-size: 9px;
+            color: deeppink;
+          }
+          ul li::before {
+            content: "😊";
+            color: maroon;
+          }
+    </style>
+</head>
+<body>
+    <!-- inline css -->
+    <h1 style="color: rgb(234, 45, 15);">Welcome to Baabtra</h1>
+<!-- internal css -->
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+<!-- external css -->
+    <h3>Lorem, ipsum dolor.</h3>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quia.</p>
+    <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos molestias eaque est?</p>
+    <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias minima, molestiae non veniam repellat ea aliquam illum ut dicta tempora?</p></div>
+<a href="#">Click here</a>
+ <ul>
+    <li>html</li>
+    <li>css</li>
+    <li>js</li>
+   
+</ul>
+</body>
+</html>

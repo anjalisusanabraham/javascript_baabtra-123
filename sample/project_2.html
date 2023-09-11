@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal blog</title>
+    <style>
+        header {
+            text-align: center;
+            background: url("images/pb_bg1.jpeg");
+            background-size: cover;
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        img {
+            margin: 40px 0px 0px 0px;
+            border: 7px solid white;
+            border-radius: 20px;
+        }
+
+        ul {
+            padding: 10px;
+            background: rgb(246, 239, 239);
+        }
+
+        li {
+            display: inline;
+            padding: 0px 10px 0px 10px;
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+                padding: 5px;
+            }
+
+            li {
+                padding: 5px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/resume.jpg">
+        <h1>Anjali's Blog</h1>
+        <ul>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Beast Poem</a></li>
+            <li><a href="#">Worst Poems</a></li>
+        </ul>
+    </header>
+    <article>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim modi ad saepe voluptatem ratione quia
+            molestiae culpa! Pariatur labore eum est architecto sed, cupiditate maiores impedit facilis odit aspernatur
+            distinctio vero sint ex praesentium illo eaque harum vel totam voluptatem.</p>
+        <button>Like</button>
+    </article>
+    <article>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim modi ad saepe voluptatem ratione quia
+            molestiae culpa! Pariatur labore eum est architecto sed, cupiditate maiores impedit facilis odit aspernatur
+            distinctio vero sint ex praesentium illo eaque harum vel totam voluptatem.</p>
+        <button>Like</button>
+    </article>
+    <article>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim modi ad saepe voluptatem ratione quia
+            molestiae culpa! Pariatur labore eum est architecto sed, cupiditate maiores impedit facilis odit aspernatur
+            distinctio vero sint ex praesentium illo eaque harum vel totam voluptatem.</p>
+        <button>Like</button>
+    </article>
+</body>
+<script>
+    $("button").on("click", function () {
+        alert("Clicked!");
+    });
+</script>
+
+</html>

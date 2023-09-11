@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 4</title>
+</head>
+<body>
+    <script>
+       
+const table = document.createElement("table");
+
+
+const row1 = table.insertRow(0);
+
+
+for (let i = 0; i < 3; i++) {
+    const cell = row1.insertCell(i);
+   
+}
+
+
+
+const row2 = table.insertRow(1);
+
+
+for (let i = 0; i < 3; i++) {
+    const cell = row2.insertCell(i);
+    
+    if (i === 1 && row2.rowIndex === 1) {
+        cell.textContent = "Table Data";
+    }
+}
+
+
+document.body.appendChild(table);
+
+    </script>
+</body>
+</html>

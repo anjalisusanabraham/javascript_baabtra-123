@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array fruits</title>
+</head>
+
+<body>
+    <script>
+        var number = prompt('Enter the number of fruits')
+
+        fruits = [[], []]
+        for (i = 0; i < number; i++) {
+            fruits[0][i] = prompt('Enter the fruit name')
+            fruits[1][i] = Number(prompt('Enter the price of the fruit'))
+
+        }
+
+        document.write("<table border = '1'><tr><th>Fruit name</th><th>Price</th></tr>")
+        var sum = 0
+        for (i = 0; i < number; i++) {
+            sum = sum + fruits[1][i]
+            document.write("<tr><td>" + fruits[0][i] + "</td><td>" + fruits[1][i] + "</td></tr>")
+
+        }
+
+        document.write('<tr><td>total</td><td>' + sum + '</td></tr></table>')
+
+
+    </script>
+</body>
+
+</html>

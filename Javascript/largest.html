@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest number in all digit</title>
+</head>
+
+<body>
+    <script>
+        var num = 2386;
+        var largest = 0;
+        while (num) {
+            var rem = num % 10
+            largest = Math.max(rem, largest)
+            num = parseInt(num / 10)
+        }
+        console.log(largest)
+    </script>
+</body>
+
+</html>
