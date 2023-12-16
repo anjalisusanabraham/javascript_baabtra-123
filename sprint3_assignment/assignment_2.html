@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+   .email{
+    color: blue;
+   }
+   .star{
+    color: red;
+   }
+   #Companyname{
+    width: 50%;
+    
+   }
+   #website{
+    width: 50%;
+   }
+   .fname{
+    padding-right: 70px;
+   }
+   .lname{
+    padding-right: 70px;
+   }
+   .cname{
+    padding-right: 45px;
+   }
+   .phone{
+    padding-right: 95px;
+   }
+   .wname{
+    padding-right: 90px;
+   }
+   .email{
+    padding-right: 90px;
+   }
+   .sname{
+    padding-right: 40px;
+   }
+   .coname{
+    padding-right: 80px;
+   }
+  button{
+    background-color: white;
+    color: rgb(28, 29, 34);
+    border: 3px solid blue;
+    text-align: center;
+    width: 300px;
+    
+  }
+</style>
+<body>
+    <h1>Request for White Paper</h1>
+    <p>Please fill out the form below. If you have any questions, please e-mail <span class="email"><u>white_paper@ektron.com</u></span>.</p>
+    <p><span class="star">*</span>- required fields</p>
+    <hr color="blue" width="100%" size="5px">
+    <br>
+    <label for="" class="fname"><span class="star">*</span>First Name:</label>
+    <input type="text" name="" id="fname" required ><br><br>
+    <label for="" class="lname"><span class="star">*</span>Last Name:</label>
+    <input type="text" name="" id="lname" required><br><br>
+    <label for="" class="cname">Company Name:</label>
+    <input type="text" name="" id="Companyname"><br><br>
+    <label for="" class="wname">Company/Personal<br> Website:</label>
+    <input type="text" name="" id="website"><br><br>
+    <label for="" class="email"><span class="star">*</span>Email:</label>
+    <input type="email" name="" id="email" required><br><br>
+    <label for="" class="phone">Phone:</label>
+    <input type="number" name="" id="phone">
+    <label for="">Ext:</label>
+    <input type="text" name="" id="ext"><br><br>
+    <label for="" class="sname">State/Province:</label>
+    <select name="" id="state">
+        <option value="">Select for USA or Canada Only</option>
+        <option value="">Toronto</option>
+        <option value="">Montreal</option>
+        <option value="">Halifax[</option>
+        <option value="">Moncton</option>
+        <option value="">Fredericton</option>
+        <option value="">Victoria</option>
+        <option value="">Charlottetown</option>
+    </select><br><br>
+    <label for="" class="coname"><span class="star">*</span>Country</label>
+    <select name="" id="Country" required>
+        <option value="">United States</option>
+        <option value="">California</option>
+        <option value="">Lowa</option>
+        <option value="">Texas</option>
+    </select><br><br>
+    <label for="" class="comments">Comments:</label><br>
+    <textarea name="" id="Comments" cols="150" rows="2"></textarea>
+    <br><br>
+    <center>
+    <button >Request White Paper</button>
+</center>
+</body>
+</html>

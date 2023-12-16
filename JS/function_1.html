@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function 1</title>
+</head>
+
+<body>
+    <script>
+        //----- fuctions -----
+
+
+        // function test_function(){
+        //     alert("this is my first function")
+        // }
+        // test_function()
+
+
+        // function test_function(fname,lname){
+        //     alert(fname+" "+lname)
+        // }
+        // test_function('sam','ram')
+
+
+        //----- anonymous function -----
+
+
+        // (function(){
+        //     alert("this is simple anonymous function")
+        // })();
+
+
+        //    x = (function(a,b){
+        //      return a+b
+        //     })(1,2);
+        //     alert(x)
+
+
+        //----- function assigned to a veriable -----
+
+
+        // x = function(){
+        //     alert("hello x")
+        // }
+        // x()
+
+
+        //----- arrow function ------
+
+
+        // x=()=>{
+        //     alert('this is an arrow function')
+        // }
+        // x()
+
+
+        // x=(a,b)=>{
+        //     alert(a+b)
+        // }
+        // x(1,2)
+
+
+        //----- call back function -----
+
+
+        // function callme(msg) {
+        //     console.log(msg)
+        // }
+        // function call_callme(msg1,f){
+        //     f(msg1)
+        // }
+        // call_callme('this is call msg',callme)            
+
+
+        //----- class -----
+
+
+        // class person {
+        //     name = 'Anjali'
+        //     age = 20
+        //     constructor(){
+        //         console.log('this is constructor')
+        //     }
+        //     set_data = function () {
+        //         this.name = 'Vinsha'
+        //         this.age = 20
+        //     }
+        //     display_data = function () {
+        //         console.log(this.name)
+        //         console.log(this.age)
+        //     }
+        // }
+        // var p1 = new person()
+        // p1.display_data()
+        // p1.set_data()
+        // p1.display_data()
+
+
+            //----- inheritance -----
+
+            class person{
+                name = "A"
+                age = 0
+                constructor(){
+                    console.log("this is parent constructor")
+                }
+            }
+            class student extends person{
+                rollno = 0
+                constructor(){
+                    super()
+                    console.log("this is child constructor")
+                }
+                set_data = function(){
+                    this.name = "Anjali"
+                    this.age = 30
+                    this.rollno = 113
+                }
+                display_data = function(){
+                    console.log(this.name+" "+this.age+" "+this.rollno)
+                }
+            }
+            var s = new student()
+            s.set.data()
+            s.display_data()
+
+    </script>
+</body>
+
+</html>

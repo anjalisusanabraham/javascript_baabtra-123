@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- inline js -->
     <button type="button" onclick="alert('hello')">Click</button>
     <!-- internal js -->
     <script>
         document.write("helloo");
-        let age =25 ;
-        console.log(age, typeof(age))
-        let name = 'anjali' ;
+
+        let age = 25;
+        console.log(age, typeof (age))
+
+        let name = 'anjali';
         console.log(name, typeof (name))
-        let student = {name : "anjali",age : 20,place: "calicut"}
-        console.log(student.name,student.age,student.place)
-        let marks = [20,30,29,27,21]
+
+        let student = { name: "anjali", age: 20, place: "calicut" }
+        console.log(student.name, student.age, student.place)
+
+        let marks = [20, 30, 29, 27, 21]
         console.log(marks[0])
-        console.log("total marks=",marks[0]+marks[1]+marks[2]+marks[3]+marks[4])
-        console.log(" my name is " +student.name + " my age is " + student.age + " my place is " + student.place)
+        console.log("total marks=", marks[0] + marks[1] + marks[2] + marks[3] + marks[4])
+        console.log(" my name is " + student.name + " my age is " + student.age + " my place is " + student.place)
         console.log(`my name is ${student.name} my age is ${student.age} my place is ${student.place}`)
+
         // console.log(x)
         // var x = 23
-        
-    //    var x = 10
-    //    var y = "10"
-    //    console.log(x==y)
 
-    // var x = 10
-    //    var y = "10"
-    //    console.log(x===y)
+        //    var x = 10
+        //    var y = "10"
+        //    console.log(x == y)
 
-    var x = 10
-       var y = "10"
-       console.log(x!==y)
-       student_name = prompt('Emter your name')
-       document.write('<h1>Welcome'+student_name +'</h1>'
-       )
+        // var x = 10
+        //    var y = "10"
+        //    console.log(x === y)
+
+        var x = 10
+        var y = "10"
+        console.log(x !== y)
+        student_name = prompt('Emter your name')
+        document.write('<h1>Welcome' + student_name + '</h1>')
+
     </script>
+
     <!-- external js -->
+
     <script src="js/javascript_1.js"></script>
+
 </body>
+
 </html>

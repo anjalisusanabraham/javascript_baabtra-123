@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+</head>
+<style>
+      h1{
+        color: blue;
+        width: 100%px;
+        height: 100%;
+    }
+    body{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkN2RHaQe8fWQ-_6QWY0dm_6sdR5lRgGu73w&usqp=CAUhttps://img.freepik.com/premium-photo/close-up-nature-view-green-leaf-blurred-greenery-background-sunlight-with-bokeh-copy-space-using-as-background-natural-plants-landscape_105035-780.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   button{
+    background-color: rgb(189, 103, 103);
+   padding: 10px;
+   width: 20%px;
+
+   }
+   input {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+<body>
+    <center>
+    <h1>User Sign Up</h1>
+    <form id="registrationForm">
+        <label for="regUsername">Username:</label>
+        <input type="text" id="regUsername" name="regUsername" required>
+        <br>
+        <label for="regPassword">Password:</label>
+        <input type="password" id="regPassword" name="regPassword" required>
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+</center>
+    <script>
+         // Registration form submission
+         const registrationForm = document.getElementById("registrationForm");
+        registrationForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const regUsername = document.getElementById("regUsername").value;
+            const regPassword = document.getElementById("regPassword").value;
+
+            // Check if the username already exists in local storage
+            if (localStorage.getItem(regUsername)) {
+                alert("Username already exists. Please choose another.");
+            } else {  
+                // Store the username and password in local storage
+                localStorage.setItem(regUsername, regPassword);
+             
+
+                // Display a success message
+                alert("Account created successfully. You can now log in.");
+
+                // Clear the registration form
+                registrationForm.reset();
+               
+            }
+        });
+   
+    </script>
+
+</body>
+</html>
